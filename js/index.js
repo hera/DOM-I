@@ -153,3 +153,15 @@ function randomizeCta() {
 }
 
 document.getElementById("random-cta").addEventListener("click", randomizeCta);
+
+
+// Stretch
+// Update styles throughout the page as you see fit
+
+
+// Place header logo before nav links
+
+document.querySelector("header nav").style.order = 1;
+document.getElementById("logo-img").style.alignSelf = "flex-start";
+document.getElementById("logo-img").style.marginLeft = 0;
+document.getElementById("logo-img").style.marginRight = "28px";

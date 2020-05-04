@@ -119,6 +119,23 @@ contactParagraphs[2].textContent = siteContent["contact"]["email"];
 document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];;
 
 
+// Add a couple of menu links
+
+// Create the first link
+let extraLinkOne = document.createElement("a");
+let extraLinkOneContent = document.createTextNode("FAQ");
+extraLinkOne.appendChild(extraLinkOneContent);
+
+// one more
+let extraLinkTwo = document.createElement("a");
+let extraLinkTwoContent = document.createTextNode("Blog");
+extraLinkTwo.appendChild(extraLinkTwoContent);
+
+
+document.querySelector("nav").prepend(extraLinkOne);
+document.querySelector("nav").appendChild(extraLinkTwo);
+
+
 // Make nav links green
 
 document.querySelectorAll("nav a").forEach((item) => item.style.color = "green");

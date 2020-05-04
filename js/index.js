@@ -42,8 +42,13 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
+// Title
+
 document.title = "Great Idea!";
 document.querySelector("script[defer]").remove();
+
+
+// Navigation
 
 let navlinks = document.querySelectorAll(".container > header > nav > a");
 
@@ -51,9 +56,48 @@ for (let i = 0; i < 6; i++) {
     navlinks[i].innerText = siteContent["nav"][`nav-item-${i + 1}`];
 }
 
+// CTA
 
 let ctaText = document.querySelector(".cta-text");
 
 ctaText.querySelector("h1").textContent = siteContent.cta.h1;
 ctaText.querySelector("button").textContent = siteContent.cta.button;
 document.getElementById("cta-img").setAttribute("src", siteContent.cta["img-src"]);
+
+
+// Top content
+
+let topContent = document.querySelector(".top-content");
+
+let topContentHeadings = topContent.querySelectorAll("h4");
+
+topContentHeadings[0].textContent = siteContent["main-content"]["features-h4"];
+topContentHeadings[1].textContent = siteContent["main-content"]["about-h4"];
+
+topContentParagraphs = topContent.querySelectorAll("p");
+
+topContentParagraphs[0].textContent = siteContent["main-content"]["features-content"];
+topContentParagraphs[1].textContent = siteContent["main-content"]["about-content"];
+
+
+// Middle
+
+document.getElementById("middle-img").setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+
+// Bottom content
+
+let bottomContent = document.querySelector(".bottom-content");
+let bottomContentHeadings = bottomContent.querySelectorAll("h4");
+
+bottomContentHeadings[0].textContent = siteContent["main-content"]["services-h4"];
+bottomContentHeadings[1].textContent = siteContent["main-content"]["product-h4"];
+bottomContentHeadings[2].textContent = siteContent["main-content"]["vision-h4"];
+
+
+let bottomContentParagraphs = bottomContent.querySelectorAll("p");
+
+bottomContentParagraphs[0].textContent = siteContent["main-content"]["services-content"];
+bottomContentParagraphs[1].textContent = siteContent["main-content"]["product-content"];
+bottomContentParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
+

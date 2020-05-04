@@ -112,3 +112,8 @@ let contactParagraphs = contact.querySelectorAll("p");
 contactParagraphs[0].textContent = siteContent["contact"]["address"];
 contactParagraphs[1].textContent = siteContent["contact"]["phone"];
 contactParagraphs[2].textContent = siteContent["contact"]["email"];
+
+
+// Footer
+
+document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];;

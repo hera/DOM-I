@@ -139,3 +139,17 @@ document.querySelector("nav").appendChild(extraLinkTwo);
 // Make nav links green
 
 document.querySelectorAll("nav a").forEach((item) => item.style.color = "green");
+
+
+// Stretch 
+// update content on the site with a click of a button
+
+let words = ['awesome', 'cool', 'fascinating', 'good'];
+
+function randomizeCta() {
+    let randomNum = Math.floor(Math.random() * words.length);
+
+    document.querySelector(".cta-text h1").textContent = `DOM is ${words[randomNum]}`;
+}
+
+document.getElementById("random-cta").addEventListener("click", randomizeCta);

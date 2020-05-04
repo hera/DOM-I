@@ -101,3 +101,14 @@ bottomContentParagraphs[0].textContent = siteContent["main-content"]["services-c
 bottomContentParagraphs[1].textContent = siteContent["main-content"]["product-content"];
 bottomContentParagraphs[2].textContent = siteContent["main-content"]["vision-content"];
 
+
+// Contact
+
+let contact = document.querySelector(".contact");
+
+contact.querySelector("h4").textContent = siteContent["contact"]["contact-h4"];
+
+let contactParagraphs = contact.querySelectorAll("p");
+contactParagraphs[0].textContent = siteContent["contact"]["address"];
+contactParagraphs[1].textContent = siteContent["contact"]["phone"];
+contactParagraphs[2].textContent = siteContent["contact"]["email"];

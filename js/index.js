@@ -117,3 +117,8 @@ contactParagraphs[2].textContent = siteContent["contact"]["email"];
 // Footer
 
 document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];;
+
+
+// Make nav links green
+
+document.querySelectorAll("nav a").forEach((item) => item.style.color = "green");
